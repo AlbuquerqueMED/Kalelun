@@ -3,157 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleducate | Educação & Saúde</title>
+    <title>Coleducate | O Futuro da Educação em Saúde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
-        /* Estilo Profissional e Limpo */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Reset e Base Futurista */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0a0e17; /* Fundo escuro profundo */
+            color: #c4d2e7; /* Texto claro, mas não branco puro para conforto visual */
+            line-height: 1.7;
+            background-image: radial-gradient(circle at 10% 20%, rgba(0, 136, 169, 0.1) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.05) 0%, transparent 20%);
+        }
+        h1, h2, h3, .btn {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Header com Efeito Neon */
         header {
-            background-color: #004a99; /* Azul Profissional */
-            color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 120px 20px 80px;
+            background: linear-gradient(180deg, rgba(10, 14, 23, 0.9) 0%, #0a0e17 100%);
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            /* Efeito de brilho no texto */
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.7), 0 0 20px rgba(0, 136, 169, 0.5);
+            margin-bottom: 15px;
         }
         header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.3rem;
+            color: #00d2ff; /* Azul Ciano elétrico */
         }
+
+        /* Container Principal */
         .container {
-            max-width: 800px;
-            margin: -40px auto 40px;
-            background: white;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Efeito de Cartão de Vidro (Glassmorphism) */
+        .glass-card {
+            background: rgba(22, 28, 45, 0.7); /* Fundo semi-transparente */
+            backdrop-filter: blur(12px); /* Efeito de desfoque atrás do vidro */
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 210, 255, 0.1); /* Borda sutil brilhante */
+            border-radius: 16px;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Sombra suave */
+            transition: transform 0.3s ease;
         }
+        .glass-card:hover {
+            border-color: rgba(0, 210, 255, 0.3);
+            transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+        }
+
+        /* Títulos das Seções */
         h2 {
-            color: #004a99;
-            border-bottom: 2px solid #eef2f3;
-            padding-bottom: 10px;
+            color: #00d2ff;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-bottom: 2px solid rgba(0, 210, 255, 0.5);
+            padding-bottom: 5px;
         }
-        .contact-info {
-            background-color: #eef2f3;
-            padding: 20px;
-            border-radius: 5px;
+
+        /* Destaque para Pesquisa */
+        .research-highlight {
+            border-left: 4px solid #00d2ff;
+            padding-left: 20px;
             margin-top: 20px;
+            font-style: italic;
+            background: linear-gradient(90deg, rgba(0, 210, 255, 0.05) 0%, transparent 100%);
         }
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            padding: 20px;
-        }
+
+        /* Botão Futurista */
         .btn {
             display: inline-block;
-            background: #004a99;
-            color: white;
-            padding: 10px 20px;
+            margin-top: 25px;
+            padding: 15px 35px;
+            background: linear-gradient(90deg, #0088a9, #00d2ff);
+            color: #0a0e17;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
         }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Coleducate</h1>
-    <p>Educação Médica e Inovação em Saúde</p>
-</header>
-
-<div class="container">
-    <h2>Bem-vindo</h2>
-    <p>Estamos trabalhando para construir uma plataforma inovadora voltada à educação e excelência na área da saúde.</p>
-    
-    <h2>Nosso Objetivo</h2>
-    <p>Oferecer recursos qualificados para estudantes e profissionais, unindo conhecimento acadêmico e prática clínica.</p>
-
-    <div class="contact-info">
-        <h2>Contato Profissional</h2>
-        <p><strong>E-mail:</strong> dr.albuquerque.med@coleducatefsa.com.br</p>
-        <a href="mailto:dr.albuquerque.med@coleducatefsa.com.br" class="btn">Enviar E-mail</a>
-    </div>
-</div>
-
-<footer>
-    &copy; 2026 Coleducate - Feira de Santana, BA. Todos os direitos reservados.
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleducate | Educação & Saúde</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #004a99;
+        .btn:hover {
+            background: linear-gradient(90deg, #00d2ff, #0088a9);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.7);
             color: white;
-            padding: 60px 20px;
-            text-align: center;
         }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        .container {
-            max-width: 800px;
-            margin: -40px auto 40px;
-            background: white;
+
+        /* Footer */
+        footer {
+            text-align: center;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004a99;
-            border-bottom: 2px solid #eef2f3;
-            padding-bottom: 10px;
-            font-size: 1.5rem;
-        }
-        .intro-text { margin-bottom: 30px; }
-        .academic-focus {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-left: 4px solid #004a99;
-            margin: 20px 0;
-        }
-        .contact-info {
-            background-color: #eef2f3;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        .btn {
-            display: inline-block;
-            background: #004a99;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
-        footer {
-            text-align: center;
             font-size: 0.9rem;
-            color: #777;
-            padding: 20px;
+            color: rgba(196, 210, 231, 0.6);
+            border-top: 1px solid rgba(0, 210, 255, 0.1);
         }
     </style>
 </head>
@@ -161,31 +121,38 @@
 
 <header>
     <h1>Coleducate</h1>
-    <p>Educação Médica e Inovação em Saúde</p>
+    <p>Inovação & Tecnologia na Educação Médica</p>
 </header>
 
 <div class="container">
-    <section class="intro-text">
-        <h2>A Iniciativa</h2>
-        <p>O Coleducate é um projeto voltado à disseminação de conhecimento médico qualificado e ao uso de tecnologias educacionais. Com sede em Feira de Santana-BA, nossa missão é oferecer recursos que auxiliem estudantes e profissionais da saúde em sua jornada de aprendizado contínuo.</p>
+    <section class="glass-card">
+        <h2>A Nova Fronteira do Conhecimento</h2>
+        <p>O Coleducate nasce em Feira de Santana-BA com a missão de integrar a excelência acadêmica às mais avançadas tecnologias educacionais. Somos um hub focado em preparar a próxima geração de profissionais de saúde para um futuro complexo e digital.</p>
     </section>
 
-    <section class="academic-focus">
-        <h2>Ensino e Pesquisa</h2>
-        <p>Sob a coordenação de <strong>Tiago Albuquerque</strong>, estudante de Medicina e embaixador SanarFlix, o projeto também dedica espaço à reflexão sobre direitos e saúde em contextos diversos. </p>
-        <p>Atualmente, desenvolvemos uma pesquisa focada na <strong>defesa dos direitos e na equidade em saúde para a população cigana</strong>, unindo vivência étnica e rigor acadêmico para promover um ensino médico mais humanizado e inclusivo.</p>
+    <section class="glass-card">
+        <h2>Nosso Objetivo</h2>
+        <p>Desenvolver e disseminar recursos educacionais de alto nível, unindo o rigor científico a metodologias de ensino inovadoras, focadas exclusivamente no fortalecimento do conhecimento acadêmico e teórico dos estudantes da área da saúde.</p>
     </section>
 
-    <div class="contact-info">
-        <h2>Contato Profissional</h2>
-        <p>Para dúvidas, colaborações ou informações sobre o projeto:</p>
-        <p><strong>E-mail:</strong> dr.albuquerque.med@coleducatefsa.com.br</p>
-        <a href="mailto:dr.albuquerque.med@coleducatefsa.com.br" class="btn">Enviar Mensagem</a>
-    </div>
+    <section class="glass-card" style="border-color: rgba(155, 89, 182, 0.3);">
+        <h2 style="color: #be93e7; border-color: rgba(155, 89, 182, 0.5);">Inovação & Diversidade Acadêmica</h2>
+        <p>Sob a coordenação de Tiago Albuquerque (Acadêmico de Medicina e Embaixador SanarFlix), o projeto fomenta pesquisas que ampliam a visão sobre saúde e sociedade.</p>
+        
+        <div class="research-highlight" style="border-color: #be93e7;">
+            <p><strong>Linha de Pesquisa Atual:</strong> Investigação acadêmica sobre direitos, equidade e acesso à saúde da população cigana, utilizando dados e análise crítica para propor modelos educacionais mais inclusivos e humanizados.</p>
+        </div>
+    </section>
+
+    <section class="glass-card" style="text-align: center;">
+        <h2>Conecte-se ao Futuro</h2>
+        <p>Para parcerias acadêmicas, dúvidas ou informações sobre o projeto.</p>
+        <a href="mailto:dr.albuquerque.med@coleducatefsa.com.br" class="btn">Enviar Mensagem Criptografada</a>
+    </section>
 </div>
 
 <footer>
-    &copy; 2026 Coleducate - Feira de Santana, BA. Todos os direitos reservados.
+    &copy; 2026 Coleducate Labs | Feira de Santana, BA. <br>Todos os direitos reservados.
 </footer>
 
 </body>
